@@ -46,7 +46,7 @@ a {
   padding-inline: 95px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .container {
     padding-inline: 20px;
   }
@@ -128,7 +128,7 @@ a {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .nav-btn-responsive {
     display: inline-flex;
     align-self: center;
@@ -147,7 +147,7 @@ a {
   max-width: 200px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .nav .nav-brand img {
     max-width: 120px;
   }
@@ -194,7 +194,7 @@ a {
   gap: 20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .nav .nav-menu {
     flex-direction: column;
   }
@@ -220,7 +220,7 @@ a {
   color: #012c3d;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .nav .nav-link {
     font-size: 18px;
   }
@@ -249,7 +249,7 @@ a {
   padding-top: 180px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .section-hero {
     padding-top: 120px;
   }
@@ -261,7 +261,7 @@ a {
   justify-content: space-between;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .hero {
     flex-direction: column;
   }
@@ -284,7 +284,7 @@ a {
   text-transform: uppercase;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .hero .content-right h1 {
     font-size: 42px;
   }
@@ -403,7 +403,7 @@ a {
   margin-top: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .project {
     flex-wrap: wrap;
     gap: 20px;
@@ -431,7 +431,7 @@ a {
   gap: 45px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .portfolio {
     gap: 42px;
   }
@@ -456,7 +456,7 @@ a {
   font-weight: 700;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .portfolio .content-top h2 {
     font-size: 36px;
   }
@@ -555,7 +555,7 @@ a {
   row-gap: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .portfolio .content-bottom .wrapper {
     flex-direction: column;
   }
@@ -590,9 +590,43 @@ a {
   z-index: -3;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .section-about {
     padding-block: 60px;
+  }
+
+  .section-about .profile-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .section-about .education-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .section-about .skill-about {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .section-about .skill-about h5 {
+    text-align: center;
+  }
+
+  .section-about .skill-about .skill-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
   }
 }
 
@@ -641,9 +675,15 @@ a {
   text-align: left;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .about h2 {
     font-size: 36px;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
   }
 }
 
@@ -692,7 +732,7 @@ a {
   background-color: #fff;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .skill-about {
     display: flex;
     flex-direction: row;
@@ -780,7 +820,7 @@ a {
   background-size: cover;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .section-services {
     padding-block: 60px;
     display: flex;
@@ -821,7 +861,7 @@ a {
   color: #012c3d;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .services .title-service h2 {
     font-size: 36px;
   }
@@ -839,7 +879,7 @@ a {
   align-items: flex-end;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .services .title-service {
     flex-direction: column;
     align-items: flex-start;
@@ -858,9 +898,12 @@ a {
   gap: 50px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .services .cards {
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 32px;
   }
 }
@@ -909,7 +952,7 @@ a {
   padding-bottom: 140px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .wrapper-footer {
     padding-top: 40px;
     padding-bottom: 80px;
@@ -921,7 +964,7 @@ a {
   justify-content: space-around;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .footer {
     flex-direction: column;
     gap: 32px;
