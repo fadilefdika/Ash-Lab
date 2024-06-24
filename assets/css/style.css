@@ -46,7 +46,7 @@ a {
   padding-inline: 95px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .container {
     padding-inline: 20px;
   }
@@ -128,7 +128,7 @@ a {
   display: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .nav-btn-responsive {
     display: inline-flex;
     align-self: center;
@@ -147,12 +147,13 @@ a {
   max-width: 200px;
 }
 
-@media (max-width: 480px) {
-  .nav .nav-brand img {
+@media (max-width: 600px) {
+  .navbar .nav-brand img {
     max-width: 120px;
+    margin-right: 10px;
   }
 
-  .nav .navbar-collapse {
+  .navbar .navbar-collapse {
     position: absolute;
     top: 100%;
     left: 0;
@@ -160,27 +161,29 @@ a {
     background-color: #78bdc4;
     display: flex;
     flex-direction: column;
-    gap: 18px;
-    padding-inline: 20px;
+    gap: 10px;
+    padding: 10px;
     height: 0;
     overflow: hidden;
+    transition: height 0.3s ease;
   }
 
-  .nav .navbar-collapse .nav-menu,
-  .nav .navbar-collapse .btn-mobile {
+  .navbar .navbar-collapse.active {
+    height: auto;
+  }
+
+  .navbar .nav-menu {
     opacity: 0;
+    transition: opacity 0.3s ease;
   }
 
-  .nav .navbar-collapse.active {
-    height: 100vh;
-    justify-content: center;
-  }
-
-  .nav .navbar-collapse.active .nav-menu,
-  .nav .navbar-collapse.active .btn-mobile {
+  .navbar .navbar-collapse.active .nav-menu {
     opacity: 1;
   }
 
+  .navbar .nav-link {
+    text-align: center;
+  }
   .wrap-btn {
     gap: 18px;
     justify-content: center;
@@ -194,7 +197,7 @@ a {
   gap: 20px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .nav .nav-menu {
     flex-direction: column;
   }
@@ -220,7 +223,7 @@ a {
   color: #012c3d;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .nav .nav-link {
     font-size: 18px;
   }
@@ -249,7 +252,7 @@ a {
   padding-top: 180px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .section-hero {
     padding-top: 120px;
   }
@@ -261,7 +264,7 @@ a {
   justify-content: space-between;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .hero {
     flex-direction: column;
   }
@@ -284,7 +287,7 @@ a {
   text-transform: uppercase;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .hero .content-right h1 {
     font-size: 42px;
   }
@@ -403,7 +406,7 @@ a {
   margin-top: 10px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .project {
     flex-wrap: wrap;
     gap: 20px;
@@ -431,7 +434,7 @@ a {
   gap: 45px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .portfolio {
     gap: 42px;
   }
@@ -456,7 +459,7 @@ a {
   font-weight: 700;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .portfolio .content-top h2 {
     font-size: 36px;
   }
@@ -504,18 +507,32 @@ a {
   font-weight: 600;
 }
 
-.nav-item {
-  padding: 0 20px;
+.nav-portfolio .nav-item {
   cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-.underline {
+.nav-portfolio .underline {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 2px;
-  background-color: black;
-  transition: width 0.3s, transform 0.3s;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.3s ease;
+  width: 0;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .underline {
+    position: static;
+  }
 }
 
 .portfolio .content-bottom {
@@ -555,7 +572,7 @@ a {
   row-gap: 10px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .portfolio .content-bottom .wrapper {
     flex-direction: column;
   }
@@ -580,6 +597,14 @@ a {
   z-index: -23;
 }
 
+@media (max-width: 600px) {
+  .logobgsatu {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .logobgdua {
   position: absolute;
   width: 240px;
@@ -590,7 +615,7 @@ a {
   z-index: -3;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .section-about {
     padding-block: 60px;
   }
@@ -675,7 +700,7 @@ a {
   text-align: left;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .about h2 {
     font-size: 36px;
   }
@@ -732,7 +757,7 @@ a {
   background-color: #fff;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .skill-about {
     display: flex;
     flex-direction: row;
@@ -820,7 +845,7 @@ a {
   background-size: cover;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .section-services {
     padding-block: 60px;
     display: flex;
@@ -861,7 +886,7 @@ a {
   color: #012c3d;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .services .title-service h2 {
     font-size: 36px;
   }
@@ -879,7 +904,7 @@ a {
   align-items: flex-end;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .services .title-service {
     flex-direction: column;
     align-items: flex-start;
@@ -898,7 +923,7 @@ a {
   gap: 50px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .services .cards {
     display: flex;
     flex-direction: column;
@@ -952,7 +977,7 @@ a {
   padding-bottom: 140px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .wrapper-footer {
     padding-top: 40px;
     padding-bottom: 80px;
@@ -964,7 +989,7 @@ a {
   justify-content: space-around;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .footer {
     flex-direction: column;
     gap: 32px;
