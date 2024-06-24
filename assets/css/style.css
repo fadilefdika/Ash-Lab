@@ -170,6 +170,7 @@ a {
 
   .navbar .navbar-collapse.active {
     height: auto;
+    width: auto;
   }
 
   .navbar .nav-menu {
